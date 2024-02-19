@@ -1,0 +1,153 @@
+body{
+  /* background:linear-gradient(30deg, rgb(103, 102, 102),#a8c4cf ,#F39C12); */
+  background-color:black;
+}
+.hbar{
+  display: flex;
+  flex-direction: row;
+  color:white;
+  
+  margin-left: 50px;
+
+}
+.hbar h1{
+  color:rgb(255, 196, 0);
+}
+.hbar ul{
+  display: flex;
+  flex-direction:row;
+  justify-content: right;
+  gap: 120px;
+  margin:auto;
+  margin-left:50px;
+  font-weight: 500;
+  list-style: none;
+  
+}
+.hbar ul li:hover{
+  color: aqua;
+  font-size: large;
+  font-weight: 700;
+}
+.hred{
+  color: red;;
+}
+
+.herotxt{
+  position:sticky;
+  color:rgb(233, 121, 9);
+  position: relative;
+  font-size: 80px;
+}
+
+.main-nav{
+  display: flex;
+
+}
+.hbar{
+  display: flex;
+  justify-content: center;
+}
+
+.h-txt button{
+  margin-left: 35px; 
+  height: 40px;
+  font-size: larger;
+  border-radius:15px;
+  background: #27dad1;
+ }
+
+
+
+.h-txt{
+  text-align: left;
+  margin: auto ;
+  margin-left: 85px;
+}
+
+.h-txt p{
+  font-size: x-large;
+  font-style: italic;
+
+}
+
+.main-hero{
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  height:85%;
+}
+
+.main-hero img{
+  margin: 45px 0px;
+  margin-right: 85px;
+
+  height: 450px;
+  width: 450px;
+
+  border-radius: 50%;
+}
+
+@keyframes linear-anime {
+  0%{
+   transform: translateX(0px);
+    
+  }
+  100%{
+    transform: translateX();
+  }
+  
+}
+
+.Skills-bar{
+  width: 100%;
+  display: flex;
+  margin: 45px 0px;
+  justify-content: space-around;
+  animation: linear-anime 30s infinite alternate ;
+}
+
+.img-b:hover{
+  img{
+    margin:5px 45px;
+    height: 60px;
+    width:60px
+  }
+  p{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+  }
+}
+
+
+.Skills-bar img{
+  height:50px;
+  width:50px;
+  
+}
+
+.contact-section{
+  text-align: center;
+  color: white;
+}
+.contact-section h1{
+  color:rgb(255, 196, 0);
+}
+
+.contact-quote{
+  font-size: x-large;
+  font-style: italic;
+}
+
+.footer-section{
+  text-align: center;
+  background-color: rgb(83, 83, 83);
+}
+
+.footer-section h1{
+  color:rgb(255, 196, 0);
+}
