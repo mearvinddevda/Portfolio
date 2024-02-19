@@ -11,7 +11,9 @@ const HeroSec=()=>{
                     <li><a hre="#">Contact Me</a></li>
                 </ul>
             </div>
+            
         </div>
+        
     );
 };
 

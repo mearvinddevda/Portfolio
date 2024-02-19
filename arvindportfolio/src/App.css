@@ -42,7 +42,6 @@ body{
 
 .main-nav{
   display: flex;
-
 }
 .hbar{
   display: flex;
@@ -75,7 +74,7 @@ body{
   display: flex;
   text-align: center;
   justify-items: center;
-  height:85%;
+  height:86vh;
 }
 
 .main-hero img{
@@ -89,14 +88,21 @@ body{
 }
 
 @keyframes linear-anime {
-  0%{
-   transform: translateX(0px);
-    
+  from{
+    transform: translateX(-100%);
   }
-  100%{
-    transform: translateX();
+  to{
+    transform: translateX(15px);
   }
   
+}
+
+.skills{
+  text-align: center;
+  
+}
+.skills h1{
+  color: yellow;
 }
 
 .Skills-bar{
@@ -104,7 +110,7 @@ body{
   display: flex;
   margin: 45px 0px;
   justify-content: space-around;
-  animation: linear-anime 30s infinite alternate ;
+  animation: linear-anime 10s ;
 }
 
 .img-b:hover{
@@ -130,9 +136,47 @@ body{
   
 }
 
+@keyframes anime-scroll{
+  0%{
+    opacity: 0;
+    background: #000;
+    transition: ease-in;
+    width: 0px;
+    height:0px
+  }
+  25%{
+    opacity: 0.25;
+  }
+  50%{
+    opacity: 0.5;
+
+  }
+  75%{
+    opacity: 0.75;
+  }
+  100%{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+  }
+
+
+}
+
 .contact-section{
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  
+  background-color: rgb(122, 122, 122);
+  /* animation: anime-scroll 3s linear 2s; */
+}
+
+.contact-section:hover{
+  animation: anime-scroll ;
+
 }
 .contact-section h1{
   color:rgb(255, 196, 0);
@@ -143,6 +187,62 @@ body{
   font-style: italic;
 }
 
+.Contact-form{
+  border-radius: 25px;
+  margin: 2px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 45px;
+  
+}
+.Contact-form input{
+  border-radius: 25PX;
+  border-style: none;
+  font-size: 20px;
+  height: 45px;
+  width: 400px;
+  padding: 0 10px;
+  background-color: bisque;
+}
+
+#message-block{
+  height: 85px;
+  border-style: hidden;
+  padding: 10px 10px;
+  background-color: bisque;
+  border-radius: 25PX;
+  font-size: 20px;
+}
+
+
+
+.Contact-form button{
+  border-radius: 25px;
+  background-color:rgb(0, 153, 255) ;
+  min-width: 100px;
+  max-width: 200px ;
+  align-items: center;
+  border-style: hidden;
+  height: 45px;
+  margin: 0px auto;
+}
+
+
+.contact-sec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-img img{
+  height: 500px;
+  width: 500px;
+  position:relative;
+  top: -80px;
+
+}
+
 .footer-section{
   text-align: center;
   background-color: rgb(83, 83, 83);
@@ -150,4 +250,34 @@ body{
 
 .footer-section h1{
   color:rgb(255, 196, 0);
+}
+
+.details p{
+ font-size: large;
+ margin: auto;
+}
+
+#f-line{
+  font-size: large;
+  height: 3px;
+  background-color: white;
+}
+
+.f-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  right: 25px;
+  gap: 45px;
+}
+.social img{
+  height :50px;
+  width: 50px;
 }
